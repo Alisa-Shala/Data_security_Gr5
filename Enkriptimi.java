@@ -23,5 +23,18 @@ public class PlayfairCipher{
 row++;
           col=0;
         }}}
+    //Mbushe pjesen e tjeter te matrices me shkronjat e mbetuar te alfabetit por jo te perseritura
+    char currentchar='A';
+    for(int i = row;i<5;i++)
+      {
+        for(int j=col;j<5;j++)
+          {
+            while (key.indexOf(currentChar) !=-1 ||  currentChar=='J')
+              {
+currentChar++;
+              }
+            col=0;
+          }}
+    
     
   
