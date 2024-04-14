@@ -35,6 +35,15 @@ currentChar++;
               }
             col=0;
           }}
-    
+    private boolean contains(char c)
+      {
+      for(int row=0; row<5; row++){
+      for(int col=0; col<5 ;col++)
+        {
+          if(matrix [row][col] == c)
+          {
+            return true;
+          }}}
+      
     
   
