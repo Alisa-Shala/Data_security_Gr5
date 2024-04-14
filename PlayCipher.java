@@ -14,7 +14,7 @@ public class PlayfairCipher{
       char c=key.charAt(i);
       if(c=='J')
       {
-        c='I';
+        c='I';  //Zvendesoje J me I
       }
       if (!contains(c)){
         matrix[row][row]=c;
@@ -22,7 +22,9 @@ public class PlayfairCipher{
         if (col==5){
 row++;
           col=0;
-        }}}
+        }
+      }
+    }
     //Mbushe pjesen e tjeter te matrices me shkronjat e mbetuar te alfabetit por jo te perseritura
     char currentchar='A';
     for(int i = row;i<5;i++)
@@ -33,8 +35,12 @@ row++;
               {
 currentChar++;
               }
-            col=0;
-          }}
+            matrix[i][j] = currentChar;
+            currentChar;
+          }
+      col =0;
+      }
+  }
     private boolean contains(char c)
       {
       for(int row=0; row<5; row++){
@@ -43,7 +49,11 @@ currentChar++;
           if(matrix [row][col] == c)
           {
             return true;
-          }}}
+          }
+        } 
+    } 
+        return false;}
+    
       
     
   
