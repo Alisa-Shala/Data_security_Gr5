@@ -9,7 +9,7 @@ public class PlayfairCipher{
 
     //Incializo matricen
     int row=0,col=0;
-    for(int i=0;i<key.length();i++(
+    for(int i=0;i<key.length();i++)
       {
       char c=key.charAt(i);
       if(c=='J')
@@ -36,7 +36,7 @@ row++;
 currentChar++;
               }
             matrix[i][j] = currentChar;
-            currentChar;
+            currentChar++;
           }
       col =0;
       }
@@ -53,6 +53,14 @@ currentChar++;
         } 
     } 
         return false;}
+
+  public String encrypt (String plaintext){  
+    //
+    palintext=plain.text.replaceAll("[^a-zA-Z]","").toUpperCase();
+    
+  
+    
+  
     
       
     
