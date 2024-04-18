@@ -55,7 +55,7 @@ currentChar++;
         return false;}
 
   public String encrypt (String plaintext){  
-    //
+    //hiqi krej karakteret e panevojeshme dhe konvertoji shkronjat ne Uppercase
     palintext=plain.text.replaceAll("[^a-zA-Z]","").toUpperCase();
     
   
