@@ -74,6 +74,41 @@ currentChar++;
             sb.append('X');
         }
   
+  // Enkriptoni çiftet e shkronjave duke përdorur matricën
+   // Enkriptoni çiftet e shkronjave duke përdorur matricën
+         StringBuilder ciphertext = new StringBuilder();
+         për (int i = 0; i < sb.length(); i += 2) {
+             char a = sb.charAt(i);
+             char b = sb.charAt(i + 1);
+             int row1 = -1, col1 = -1, row2 = -1, col2 = -1;
+             për (rresht int = 0; rresht < 5; rresht ++) {
+                 për (int col = 0; col < 5; col++) {
+                     nëse (matrica[rreshti][col] == a) {
+                         rreshti1 = rreshti;
+                         col1 = col;
+                     } else if (matrica[rresht][col] == b) {
+                         rreshti2 = rreshti;
+                         col2 = col;
+                     }
+                 }
+             }
+             nëse (rreshti 1 == rreshti 2) {
+                 // I njëjti rresht
+                 ciphertext.append(matrica[row1][(col1 + 1) % 5]);
+                 ciphertext.append(matrica[row2][(col2 + 1) % 5]);
+             } else if (col1 == col2) {
+                 // E njëjta kolonë
+                 ciphertext.append(matrica[(rresht 1 + 1) % 5][col1]);
+                 ciphertext.append(matrica[(row2 + 1) % 5][col2]);
+             } tjeter {
+                 // Drejtkëndësh
+                 ciphertext.append(matrica[row1][col2]);
+                 ciphertext.append(matrica[row2][col1]);
+             }
+         }
+
+         kthe tekstin e koduar.toString();
+     }
     
       
     
