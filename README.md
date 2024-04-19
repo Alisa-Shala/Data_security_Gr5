@@ -11,11 +11,11 @@ Eshte nje teknike e enkriptimit simetrik. Kjo teknike kodon cifte shkronjash ne 
 Se pari e ndertojme matricen e mbushim me celsin dhe pastaj me shkronjat tjera. I ndertojme diagramet(qe paraqesin cifte te shkronjave) dhe shikojme se ku gjenden pra shkronjat.
 Ekzistojne disa raste:
 
-1:Nese jane ne te njeten row vetem zevendesojme shkronjat me shkronjen ne te djathte te tyre.
+1:Nese jane ne te njejten row vetem zevendesojme shkronjat me shkronjen ne te djathte te tyre.
 
-2:Nese jane ne te njeten kolone vetem i zevendesojme shkronjat qe jane poshte tyre.
+2:Nese jane ne te njejten kolone vetem i zevendesojme shkronjat qe jane poshte tyre.
 
-3: Nese nuk jane ne te njeten kolone ose row vetem zevendesojme me shkronjen ne te njejtin rresht por ne kolonen tjeter te ciftit.
+3: Nese nuk jane ne te njejten kolone ose row vetem zevendesojme me shkronjen ne te njejtin rresht por ne kolonen tjeter te ciftit.
 
 Anetaret e grupit:
 Alisa Shala,
