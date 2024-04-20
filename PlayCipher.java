@@ -167,7 +167,7 @@ public static void main(String[]args){
   PlayfairCipher decryptCipher = new PlayfairCipher(key);
   String decryptedPlaintext = decryptCipher.decrypt(ciphertext);
     System.out.printl("Decrypted plaintext: " + decryptedPlaintext);
- 
+  }
   
 }
     
