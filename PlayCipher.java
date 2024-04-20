@@ -149,7 +149,23 @@ currentChar++;
         return plaintext.toString();
     }
   
+public static void main(String[]args){
+Scanner scanner = new Scanner(System.in);
+  System.out.print("Enter the key: ");
+  String plaintext = scanner.nextLine();
 
+  //Enkriptimi
+  PlayfairCipher encryptCipher = new PlayfairCipher(key);
+  String ciphertext = encryptCipher.encrypt(plaintext);
+  System.out.printl("Ciphertext: " + ciphertext);
+
+  // Shfaq matricën kryesore
+  System.out.printl("\nKey Square:")
+    encryptCipher.displayMatrix();
+  
+ 
+  
+}
     
       
     
