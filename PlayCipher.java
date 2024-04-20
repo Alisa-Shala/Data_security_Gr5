@@ -109,6 +109,45 @@ currentChar++;
 
           return encodedText.toString();
       }
+
+   public String decrypt(String ciphertext) {
+        // Largoj karakterat e panevojshem dhe konvertoj ne uppercase
+        ciphertext = ciphertext.replaceAll("[^a-zA-Z]", "").toUpperCase();
+
+        // Dekripto letter pairs duke perdorur matricen
+        StringBuilder plaintext = new StringBuilder();
+        for (int i = 0; i < ciphertext.length(); i += 2) {
+            char a = ciphertext.charAt(i);
+            char b = ciphertext.charAt(i + 1);
+            int row1 = -1, col1 = -1, row2 = -1, col2 = -1;
+            for (int row = 0; row < 5; row++) {
+                for (int col = 0; col < 5; col++) {
+                    if (matrix[row][col] == a) {
+                        row1 = row;
+                        col1 = col;
+                    } else if (matrix[row][col] == b) {
+                        row2 = row;
+                        col2 = col;
+                    }
+                }
+            }
+            if (row1 == row2) {
+                // rreshti i njejte
+                plaintext.append(matrix[row1][(col1 + 4) % 5]);
+                plaintext.append(matrix[row2][(col2 + 4) % 5]);
+            } else if (col1 == col2) {
+                // kolona e njejte
+                plaintext.append(matrix[(row1 + 4) % 5][col1]);
+                plaintext.append(matrix[(row2 + 4) % 5][col2]);
+            } else {
+                // Rectangle
+                plaintext.append(matrix[row1][col2]);
+                plaintext.append(matrix[row2][col1]);
+            }
+        }
+
+        return plaintext.toString();
+    }
   
 
     
