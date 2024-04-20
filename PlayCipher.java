@@ -109,6 +109,8 @@ currentChar++;
 
           return encodedText.toString();
       }
+  
+
     
       
     
