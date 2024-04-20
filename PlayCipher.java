@@ -150,7 +150,7 @@ currentChar++;
     }
   
 public static void main(String[]args){
-Scanner scanner = new Scanner(System.in);
+  Scanner scanner = new Scanner(System.in);
   System.out.print("Enter the key: ");
   String plaintext = scanner.nextLine();
 
@@ -162,7 +162,11 @@ Scanner scanner = new Scanner(System.in);
   // Shfaq matricën kryesore
   System.out.printl("\nKey Square:")
     encryptCipher.displayMatrix();
-  
+
+  //Dekriptimi
+  PlayfairCipher decryptCipher = new PlayfairCipher(key);
+  String decryptedPlaintext = decryptCipher.decrypt(ciphertext);
+    System.out.printl("Decrypted plaintext: " + decryptedPlaintext);
  
   
 }
