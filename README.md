@@ -1,6 +1,22 @@
 <h1><strong> Enkriptimi dhe dekriptimi permes teknikes Playfair Cipher ne Java</strong></h1>
 
 
+<h3><strong> Universiteti</strong></h3>
+Universiteti i Prishtinës - Fakulteti i Inxhinierisë Elektrike dhe Kompjuterike
+Departamenti - Inxhinieri kompjuterike dhe softuerike
+Projekti i dytë nga kursi Data Security mbikqyrur nga asistenti Mërgim Hoti
+
+
+
+<h3><strong>Gjuha programuese</strong></h3>
+Projekti është zhvilluar në JAVA.
+
+
+<h3><strong>Si të përdoret</strong></h3>
+Mund te ekzekutohet kudo ku supportohet JAVA dhe duhet ndjekur kushtet dhe udhezimet rreth Playfair Cipher.
+
+
+<h3><strong>Playfair Cipher</strong></h3>
 
 Playcipher Java eshte nje menyre enkriptimi i tekstit qe e perdor nje tabele(matrice) 5*5 te mbushur me nje qeles te caktuar. Kjo tabele eshet e vlefshme per shkak se nuk eshte e lehte me u dekriptu pa e ditur qelsin. Kjo teknike eshte inventuar nga Charles Wheatstone.
 
@@ -17,7 +33,7 @@ Ekzistojne disa raste:
 
 3: Nese nuk jane ne te njejten kolone ose row vetem zevendesojme me shkronjen ne te njejtin rresht por ne kolonen tjeter te ciftit.
 
-Anetaret e grupit:
+<h3><strong>Anetaret e grupit</strong></h3>
 Alisa Shala,
 Arbana Neziraj,
 Andi Ternava ,
